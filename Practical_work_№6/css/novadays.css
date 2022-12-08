@@ -1,41 +1,29 @@
+div > ul > li > ul > li:nth-child(odd){
+    background-color: #808080;
+}
+div > ul > li > ul > li:nth-child(even){
+    background-color: #ffffff;
+}
+.threes{
+    cursor: pointer;
+}
+.five{
+    cursor: pointer;
+}
+.fourr{
+    background-color: #00ffff;
+}
+h1{
+    text-align: center;
+    font-size: 22px;
+}
 a{
+    font-style: italic;
+}
+h2{
     text-align: center;
 }
-a:link, a:visited{
-    text-decoration: none;
-}
-.one{
-    color:blue;
-}
-.two{
-    color:aqua;
-}
-.three{
-    color:blueviolet;
-}
-.four{
-    color:brown;
-}
-.one:visited{
-    color: seagreen;
-}
-.two:visited{
-    color: red;
-}
-.three:visited{
-    color: darkgoldenrod;
-}
-.four:visited{
-    color: blueviolet;
-}
-#headd{
-    text-align: center;
-    font-size: 24px;
-}
-p{
-    font-size: 1.2em;
-}
-.row{
+.main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

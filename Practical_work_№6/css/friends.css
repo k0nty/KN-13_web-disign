@@ -1,46 +1,51 @@
-a{
+table{
+    border: 2px solid black;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table tr:nth-child(even){
+    background-color: #808080;
+}
+table tr:nth-child(odd){
+    background-color: #ffffff;
+}
+table td, th{
+    padding: 10px;
+    border: 2px solid #000000;
+}
+h1{
+    text-align: center;
+    font-size: 22px;
+}
+#Back_to{
+    font-style: italic;
+}
+h2{
     text-align: center;
 }
-a:link, a:visited{
-    text-decoration: none;
-}
-.one{
-    color:blue;
-}
-.two{
-    color:aqua;
-}
-.three{
-    color:blueviolet;
-}
-.four{
-    color:brown;
-}
-.one:visited{
-    color: seagreen;
-}
-.two:visited{
-    color: red;
-}
-.three:visited{
-    color: darkgoldenrod;
-}
-.four:visited{
-    color: blueviolet;
-}
-#headd{
+th{
     text-align: center;
-    font-size: 24px;
+    background-color: #008000;
+    color:#ffffff;
+    font-weight: bold;
 }
-p{
-    font-size: 1.2em;
+tr>td:nth-child(5){
+    text-align: right;
+    padding-left: 30px;
 }
-.row{
+.main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 @media (min-width: 992px){
+    th{
+        font-size: 1.3em;
+    }
+    td{
+        font-size: 1.2em;
+    }
     .col-lg-1 { 
     width: 8.33%; 
     } 
@@ -59,7 +64,6 @@ p{
     .col-lg-6 { 
     width: 50%; 
     } 
-     
     .col-lg-7 { 
     width: 58.33%; 
     } 
@@ -80,6 +84,12 @@ p{
     } 
 } 
 @media (min-width: 768px) and (max-width: 992px) {
+    th{
+        font-size: 1.2em;
+    }
+    td{
+        font-size: 1.1em;
+    }
     .col-md-1 { 
     width: 8.33%; 
     } 
@@ -118,6 +128,12 @@ p{
     } 
 } 
 @media (max-width: 768px) { 
+    th{
+        font-size: 1.1em;
+    }
+    td{
+        font-size: 1em;
+    }
     .col-sd-1 { 
     width: 8.33%; 
     } 
