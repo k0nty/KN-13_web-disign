@@ -1,4 +1,5 @@
 a{
+    display: block;
     text-align: center;
 }
 a:link, a:visited{
